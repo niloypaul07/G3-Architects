@@ -47,6 +47,7 @@
 main{
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 main>section{
     margin-top: 130px;
@@ -77,6 +78,7 @@ main>section{
     max-width: 1440px;
     margin: 0 auto;
 }
+
 
 
 
@@ -142,6 +144,48 @@ main>section{
     margin-bottom: 32px;
 }
 
+.features{
+    gap: 146px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.feature-card p{
+    font-size: 1rem;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.feature-card h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#feature-heading{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+#feature-p{
+    margin-bottom: 50px;
+}
+
+#experience-badge{
+    padding: 46px 42px;
+    margin-top: -150px;
+    margin-left: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: bold;
+}
+#experience{
+    font-size: 1.56rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 .fact-content{
     max-width: 542px;
     margin-bottom: 100px;
@@ -197,16 +241,46 @@ footer{
 /* responsive small device 576px */
 
 @media screen and (max-width: 576px) {
-   .navbar, .nav-links, .teams{
+   .navbar, .nav-links, .teams , .features {
     flex-direction: column;
    }
 .team-image , .fact-card ,  .sponser-image
 {
     grid-template-columns: repeat(1, 1fr);
 }
+
+.features-image-container img{
+    width: 100%;
+    overflow: hidden;
+}
+.feature-info-container{
+    text-align: center;
+
+}
+
+.feature-card{
+    margin:10px;
+}
+
 .sponser-image{
    justify-items: center;
    gap: 50px;
+}
+#experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.features-image-container img{
+    width: 100%;
+}
+
+    
+
+.features{
+    gap: 20px;
+    overflow: hidden;
+    
 }
 .fact-card{
     gap: 20px;
@@ -230,9 +304,12 @@ footer p{
 }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features{
      flex-direction: column;
+     
+     
     }
+    
  .team-image, .fact-card
  {
      grid-template-columns: repeat(2, 1fr);
@@ -242,12 +319,30 @@ footer p{
     margin: 0 auto 100px;
     justify-items: center;
     text-align: center;
+    
+    
 }
  .sponser-image{
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     justify-items: center;
  }
+ .features-image-container img{
+   width: 100%;
+
+
+}
+
+.feature-info-container{
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+ #experience-badge{
+    margin: 10px;
+    
+    
+}
 .fact-card {
      gap: 20px;
      
